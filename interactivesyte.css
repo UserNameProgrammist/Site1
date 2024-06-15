@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bg1.png);
+}
+
+/* вот это всё не забывай вьюпорт хай область видимости обнуление и фонофая картинка всегда в стилях */
+
+/* https: //newprogrammist.github.io/newprojectagain/realsite.html */
+
+nav {
+  padding-top: 50px;
+  display: flex;
+
+  /* тип дисплея позволяет дальше размещать наши элементы */
+
+  justify-content: center;
+}
+
+.logo {
+  margin-right: 130px;
+}
+
+.phonenumber {
+  margin-left: 130px;
+  color: white;
+}
+
+ul {
+  margin-top: 22px;
+}
+
+ul li {
+  display: inline-block;
+
+  /*дисплей инлайн блок это из столбика в строку */
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  /* текст декорейшн ноне убирает подчёеркивание */
+}
+
+/* HOMEWORK 14.02.2024 {
+
+    1) ДОБАВИТЬ ЭФФЕКТ ПРИ НАВЕДЕНИИ НА ССЫЛКУ :hover чтобы увеличивалась
+    2) стилизовать див с классом фото намбер с номером телефона
+    3) по желанию сделать хедер ( сделать надпись про ланч и кнопку под ней)
+ } */
+
+.nav-item:hover {
+  transform: scale(1.2);
+}
+
+.about {
+  /* margin-left: 100px;
+
+    margin-top: 250px; */
+
+  height: 80vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  margin-left: 10%;
+
+  margin-right: 10%;
+}
+
+/* ЗАРУБИ НА НОСУ ДИСПЛЕЙ ФЛЕКС И СМОТРЕТЬ ЧЕРЕЗ ПАНЕЛЬ РАЗРАБОТЧИКА КАКИЕ СВОЙСТВА МОЖНО ПРИМЕНИТЬ */
+
+.about button,
+.send {
+  margin-top: 40px;
+
+  height: 100px;
+
+  width: 250px;
+
+  background-color: #191970;
+
+  font-size: 22px;
+
+  color: white;
+
+  border: none;
+
+  transition: 1s;
+}
+
+/* транзишн позволяет эффект при наведении сделать плавным */
+
+.about p {
+  margin-bottom: 25px;
+
+  font-size: 25px;
+
+  color: white;
+}
+
+.about h1 {
+  margin-top: 5px;
+
+  font-size: 80px;
+
+  color: white;
+}
+
+.phonenumber {
+  display: flex;
+
+  margin-top: 22px;
+}
+
+.phonephoto {
+  height: 24px;
+  width: 22px;
+
+  margin-right: 5px;
+}
+
+.about button:hover,
+.send:hover {
+  background-color: white;
+  color: #191970;
+  cursor: pointer;
+  transform: scale(1.2);
+
+  /* ЭТО ЦВЕТА КОТОРЫЕ ПРИ НАВЕДЕНИИ */
+
+  /* transform: scale(0.5); */
+
+  /* ноль пять значит наоборот уменьшение кнопки */
+
+  /* напоминание скейл масштаб наведения */
+}
+
+/* курсор поинтер курсор мышки в виде ладони с указательным пальцем ВСЕГДА используется для кнопок */
+
+/* ДЗ ДОБАВИТЬ И РАЗМЕСТИТЬ ИКОНКИ В ХЕДЕРЕ ДЕЛАТЬ АДАПТИВНЫЙ ВАРИАНТ СРАЗУ И НЕ ЗАБЫТЬ ПРО ДИСПЛЕЙ ФЛЕКС */
+
+/* ССЫЛКА НА МАКЕТ И ЕЩЕ ОДНУ ЦВЕТОВУЮ ШКАЛУ  https: //www.htmlcsscolor.com/
+
+ https: //travkina-t.github.io/test-Tzeezotje/ */
+
+.butticon {
+  display: flex;
+
+  width: 100%;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.modal {
+  padding: 30px;
+
+  width: 700px;
+  height: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 10;
+}
+
+.modal h1 {
+  font-size: 45px;
+}
+
+.inputs {
+  display: flex;
+}
+
+.textarea {
+  display: inline-block;
+  box-sizing: border-box;
+
+  width: 330px;
+  height: 80px;
+
+  border: 1px solid grey;
+
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/* .pool1 {
+
+
+   width: 280px;
+   height: 80px;
+
+   margin-top: 30px;
+   
+
+   /* display: inline-block;
+   box-sizing: content-box; */
+
+/*   
+ }
+
+
+
+ .pool2  {
+  
+  
+
+
+   width: 280px;
+   height: 80px ;
+margin-top: 30px;
+} */
+
+/* .send {
+
+   margin-top: 120px;
+      height: 100px;
+      width: 250px;
+      background-color: #191970;
+      font-size: 22px;
+      color: white;
+      margin-left: 30px;
+      transition: 1s;
+}
+
+
+.send:hover {
+   background-color: white;
+      color: #191970;
+      cursor: pointer;
+      transform: scale(1.2);
+} */
+
+.hidden {
+  display: none;
+
+  /* дисплей нан скрывает элемент */
+
+  /* добавить дисплей нан это скрытие элемента
+
+   удалить дисплей нан это показать элемент */
+
+  /* класслист все классы любого элемента в названии  */
+}
+
+.placeholder1,
+.placeholder2 {
+  border: 1px solid grey;
+
+  /* проблема была в отсутствии явно заданного бордера */
+
+  width: 250px;
+  height: 70px;
+
+  margin-right: 20px;
+
+  margin-top: 20px;
+
+  margin-bottom: 20px;
+
+  padding-left: 10px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  /* z-index: 10; */
+
+  top: 0;
+  left: 0;
+
+  /* топ и лефт тут прилегание вплотную */
+}
+
+/* хидден класс скрывает модальное окно но название роли не играет скрывает элемент код внутри хиддена дисплей нан */
+
+/* отдельно от проекта практика */
+
+.test {
+  background-color: red;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-left {
+  margin-right: 50px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+
+  /* margin-left: 250px;
+ margin-right: 40px;
+ position: relative; */
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.day img {
+  margin-left: 15px;
+}
+
+.day p {
+  margin-top: 25px;
+}
+
+.content-right {
+  position: relative;
+}
+
+.content-right-bg {
+  position: absolute;
+
+  top: 90px;
+  right: 140px;
+
+  width: 450px;
+
+  height: 490px;
+
+  border: 3px solid #f3c00bcb;
+}
+
+.content-right-images {
+  display: flex;
+
+  position: relative;
+
+  /* используем релатив в том случае  если мы хотим какой то другой блок относительно текущего позиционировать и у этого второго будет позишн эбсолют */
+
+  /* у родительского релатив у дочернего абсолют пример бордер внутри правого блока бекграунд имажес */
+
+  height: 500px;
+
+  /* при использовании эбсолют нужно топ лефт или райт боттом но достаточно одного свойства для каждой оси */
+
+  /* margin-left: 750px; ошибка */
+}
+
+.img1 {
+  margin-right: 50px;
+}
+
+.aboutinfo {
+  height: 100%;
+
+  background-color: #191970;
+}
+
+/* ИТОГ ВСЕГДА НАЧИНАЕМ С ГЛАВНОГО РОДИТЕЛЬСКОГО БЛОКА ОТ БОЛЬШЕГО К МЕНЬШЕМУ*/
+
+/* HW БУДЕТ МАКЕТ В ВАТСАПЕ И ТЕКУЩЕМУ БЛОКУ ЗАДАТЬ ЦВЕТА И РАЗМЕР ШРИФТОВ */
+
+/* HW CODE ниже 06.03.2024 */
+
+.swiper-slide {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 180px;
+  margin-bottom: 200px;
+}
+
+.swiper-slide h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: #fcce39;
+}
+
+.swiper-slide p {
+  text-align: center;
+  color: white;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 25px;
+
+  margin-top: 20px;
+}
+
+.swiper-slide h3 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #fcce39;
+  font-style: normal;
+}
+
+.swiper-button-prev {
+  color: white;
+  margin-left: 160px;
+}
+
+.swiper-button-next {
+  color: white;
+  margin-right: 160px;
+}

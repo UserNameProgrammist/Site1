@@ -1,0 +1,270 @@
+<!-- homework создать базовую разметку ( каркас сайта подключить стили и  джс файл + регистрация на гитхаб) -->
+
+<!-- ОБЯЗАТЕЛЬНО ПОВТОРИТЬ ВСЕ НАРАБОТКИ И ОСОБЕННО ТЕ ЧТО СВЯЗАНЫ С НОВЫМ ПРОЕКТОМ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="interactivesyte.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo" src="images/logo.png" alt="" />
+
+        <ul class="restaraunt">
+          <li class="nav-item"><a href="">À la carte</a></li>
+          <li class="nav-item"><a href="">Wijnkaart</a></li>
+          <li class="nav-item"><a href="">Lunchmenu</a></li>
+          <li class="nav-item"><a href="">Contact</a></li>
+        </ul>
+
+        <div class="phonenumber">
+          <img class="phonephoto" src="images/phone.png" alt="" />
+          <p>+32 9 282 57 25</p>
+        </div>
+      </nav>
+
+      <div class="about">
+        <p>open every day 6AM - 9PM</p>
+
+        <h1>A bad day with lunch is better than a good day without it</h1>
+
+        <!-- <button>Reserve a table</button> -->
+
+        <div class="butticon">
+          <button class="table">Reserve a table</button>
+
+          <div class="icons">
+            <img
+              class="icon"
+              src="images/social_media_btn/media_btn.png"
+              alt=""
+            />
+            <img
+              class="icon"
+              src="images/social_media_btn/media_btn-2.png"
+              alt=""
+            />
+            <img
+              class="icon"
+              src="images/social_media_btn/media_btn-3.png"
+              alt=""
+            />
+            <img
+              class="icon"
+              src="images/social_media_btn/media-btn-4.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- твоя ошибка только в том что начал писать эти иконки отдельно от about и кнопки -->
+    </header>
+
+    <!-- начало написания модального окна для кнопки резёрв тейбл код отдельно от остальных частей сайта -->
+
+    <div class="modal hidden">
+      <!-- добавление класса хидден из ксс который скрывает -->
+
+      <h1>Reserve a table</h1>
+
+      <div class="inputs">
+        <div class="pool1">
+          <p>Name</p>
+
+          <input class="placeholder1" placeholder="input name" type="text" />
+
+          <!-- внутри открывающего тэга пишется плейс холдер и в кавычках то что видно пользователю до тех пор пока он не начнёт писать -->
+        </div>
+
+        <div class="pool2">
+          <p>Email</p>
+
+          <input class="placeholder2" placeholder="input email" type="email" />
+        </div>
+      </div>
+
+      <p class="request">Special request</p>
+
+      <textarea
+        class="textarea"
+        placeholder="input your special request"
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <button class="send">Send</button>
+
+      <!-- <textarea placeholder="input your special request" name="" id="" cols="30" rows="10"></textarea> -->
+
+      <!-- новый тэг запомни текст ареа многострочное поле для ввода -->
+
+      <!-- 
+      HW стилизовать модальное окно  и сделать кнопку внутри модального окна  сделать поле 1 и поле 2 один за другим а не один под другим
+   -->
+
+      <!-- подключение будет на уроке с участием JS -->
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <!-- оверлей для затенения всего вкруг модального окна и временной неактивности вокруг него -->
+
+    <main>
+      <div class="content">
+        <div class="content-left">
+          <div class="day">
+            <h2>Woensdag 12/01</h2>
+
+            <p>
+              Salade met Serrano
+              <span>
+                <img src="images/dot.png" alt="" />
+                <img src="images/dot.png" alt="" /><img
+                  src="images/dot.png"
+                  alt=""
+                /> </span
+              >Steak Tartaar
+            </p>
+          </div>
+
+          <div class="day">
+            <h2>Donderdag 13/01</h2>
+
+            <p>
+              Toast Roquefort
+              <span>
+                <img src="images/dot.png" alt="" />
+                <img src="images/dot.png" alt="" /><img
+                  src="images/dot.png"
+                  alt=""
+                /> </span
+              >Penne met Kip en Prei
+            </p>
+          </div>
+
+          <div class="day">
+            <h2>Vrijdag 14/01</h2>
+            <p>
+              Verrassing van de Chef
+              <span>
+                <img src="images/dot.png" alt="" />
+                <img src="images/dot.png" alt="" /><img
+                  src="images/dot.png"
+                  alt=""
+                /> </span
+              >Penne met Kip en Prei
+            </p>
+          </div>
+
+          <div class="day">
+            <h2>Vrijdag 15/01</h2>
+            <p>
+              Verrassing van de Chef
+              <span>
+                <img src="images/dot.png" alt="" />
+                <img src="images/dot.png" alt="" /><img
+                  src="images/dot.png"
+                  alt=""
+                /> </span
+              >Penne met Kip en Prei
+            </p>
+          </div>
+
+          <div class="day">
+            <h2>Vrijdag 16/01</h2>
+            <p>
+              Verrassing van de Chef
+              <span>
+                <img src="images/dot.png" alt="" />
+                <img src="images/dot.png" alt="" /><img
+                  src="images/dot.png"
+                  alt=""
+                /> </span
+              >Penne met Kip en Prei
+            </p>
+          </div>
+        </div>
+
+        <div class="content-right">
+          <div class="content-right-bg"></div>
+
+          <div class="content-right-images">
+            <img class="img1" src="images/sec1_photo.png" alt="" />
+            <img class="img2" src="images/sec1_photo_2.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutinfo">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/кавычки.png" alt="" />
+
+              <h2>Goede service, lekker eten, toffe ambiance</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren.
+              </p>
+              <h3>ALAIN HEYNDRICKX</h3>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="images/кавычки.png" alt="" />
+
+              <h2>Goede service, lekker eten, toffe ambiance</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren.
+              </p>
+              <h3>ALAIN HEYNDRICKX</h3>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="images/кавычки.png" alt="" />
+
+              <h2>Goede service, lekker eten, toffe ambiance</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren.
+              </p>
+              <h3>ALAIN HEYNDRICKX</h3>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ПАГИНАЦИЯ ЭТО ПОСТРАНИЧНОЕ ОТОБРАЖЕНИЕ НО В ДАННОМ СЛУЧАЕ ПЕРЕХОД НА ДРУГОЙ СЛАЙД -->
+
+    <footer></footer>
+
+    <script src="interactivesyte.js"></script>
+  </body>
+</html>
+
+<!-- HW доверстать последнюю секцию правую и левую поместить картинки -->
