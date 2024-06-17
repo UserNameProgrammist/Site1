@@ -7,7 +7,7 @@
 header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/bg1.png);
+  background-image: url(bg1.png);
 }
 
 /* вот это всё не забывай вьюпорт хай область видимости обнуление и фонофая картинка всегда в стилях */
